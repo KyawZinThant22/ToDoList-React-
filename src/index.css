@@ -1,13 +1,156 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #e3e9ff;
 }
+
+.App{
+  width: 500px;
+  margin: 0 auto;
+  /* background-color: red; */
+  margin-top: 60px;
+}
+
+.header{
+  background-color: #af7eeb;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+}
+
+.box input{
+  margin-right: 20px;
+}
+
+.container-todo{
+  margin-top: 30px;
+  position: relative;
+  
+
+}
+
+.todo:first-child{
+  padding-top: 30px;
+
+}
+
+.todo{
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 20px ;
+  font-size: 25px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(240, 236, 236, 0.972);
+  
+}
+
+.todo p{
+  font-size: 20px;
+  /* padding: 10px; */
+  /* width: 80%; */
+
+}
+.btn{
+  border: 0;
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-danger{
+  background-color: #F93154;
+}
+
+.btn-primary{
+  background-color: #1266F1;
+  margin-right: 10px;
+
+}
+
+.btn-danger:hover{
+  background-color: #f15c75;
+
+}
+
+.btn-primary:hover{
+  background-color: #2f8cdd;
+
+}
+
+.btn-main{
+  background-color: #1266F1;
+  border-radius: 20px;
+  padding: 15px 20px;
+  background-color: #2f8cdd;
+ 
+
+}
+
+.btn-main:hover{
+  background-color: #1266F1;
+
+
+}
+
+form{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.form--edit input{
+  width: 100%;
+  /* display: block; */
+  margin-right: 0;
+  
+}
+
+.input-form{
+  width: 80%;
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  outline: none;
+  margin-right: 20px;
+ 
+}
+
+.form-btn{
+  padding: 15px;
+  margin-right: 0;
+  font-size: 15px;
+}
+
+.btn-div{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-flex{
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+} 
